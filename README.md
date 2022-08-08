@@ -16,7 +16,7 @@ xcodebuild clean test \
 -destination 'platform=iOS Simulator,name=iPhone 13 Pro Max'
 ```
 
-Create an environment variable `TEST_RUNNER_name`, and then inside in the code just retrieve it through `name` parameter.
+Create an environment variable `TEST_RUNNER_name`, and then inside in the code just retrieve it through `name` parameter. See [NameUITests.swift](NameUITests/NameUITests.swift)
 
 ## Xcode Release Notes
 
