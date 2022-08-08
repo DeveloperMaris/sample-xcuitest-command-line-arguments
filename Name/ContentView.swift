@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let name: String
+
+    init() {
+        self.name = ProcessInfo.processInfo.environment["nickname"] ?? "stranger"
+    }
+
     var body: some View {
-        Text("Hello, world!")
+        Text("Hello, \(name)")
             .padding()
     }
 }
